@@ -37,7 +37,7 @@ def addBooks():
     root.geometry("700x570")
     root.resizable(width=False,height=False)
 
-    mypass = "lenovo@330" #Database password
+    mypass = "shubhu" #Database password
     mydatabase="library"  #Database name
 
     con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
@@ -61,43 +61,43 @@ def addBooks():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.1,rely=0.1,relwidth=0.8,relheight=0.7)
 
 
     # Book ID
-    lb1 = Label(labelFrame,text="Book ID : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb1 = Label(labelFrame,text="Book ID : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb1.place(relx=0.05,rely=0.1)
 
     en1 = Entry(labelFrame)
     en1.place(relx=0.3,rely=0.1, relwidth=0.62)
 
     # Title
-    lb2 = Label(labelFrame,text="Title : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb2 = Label(labelFrame,text="Title : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb2.place(relx=0.05,rely=0.25)
 
     en2 = Entry(labelFrame)
     en2.place(relx=0.3,rely=0.25, relwidth=0.62)
 
     # Book Subject
-    lb3 = Label(labelFrame,text="Subject : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb3 = Label(labelFrame,text="Subject : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb3.place(relx=0.05,rely=0.4)
 
     en3 = Entry(labelFrame)
     en3.place(relx=0.3,rely=0.4, relwidth=0.62)
 
     # Book Author
-    lb4 = Label(labelFrame,text="Author : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb4 = Label(labelFrame,text="Author : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb4.place(relx=0.05,rely=0.55)
 
     en4 = Entry(labelFrame)
     en4.place(relx=0.3,rely=0.55, relwidth=0.62)
 
     # Book Status
-    lb5 = Label(labelFrame,text="Status(Avail/Issued) : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb5 = Label(labelFrame,text="Status(Avail/Issued) : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb5.place(relx=0.05,rely=0.75)
 
     en5 = Entry(labelFrame)

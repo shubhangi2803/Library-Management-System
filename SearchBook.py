@@ -3,7 +3,7 @@ from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
 
-mypass = "lenovo@330" #Database password
+mypass = "shubhu" #Database password
 mydatabase="library"  #Database name
 
 con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
@@ -24,22 +24,22 @@ def search():
     en1.destroy()
 
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)
 
     y = 0.25
 
-    Label(labelFrame, text="%-10s%-30s%-20s%-30s%-20s"%('BID','Title','Subject','Author','Status'),bg='#b3d1ff',fg='black', font='helvetica 10 bold').place(relx=0.07,rely=0.1)
+    Label(labelFrame, text="%-10s%-30s%-20s%-30s%-20s"%('BID','Title','Subject','Author','Status'),bg='#aef35a',fg='black', font='helvetica 10 bold').place(relx=0.07,rely=0.1)
 
     searchSql = "select * from "+bookTable+" where subject = '"+sub+"'"
     try:
         cur.execute(searchSql)
         con.commit()
         for i in cur:
-            Label(labelFrame, text="%-10s%-30s%-20s%-30s%-20s"%(i[0],i[1],i[2],i[3],i[4]),bg='#b3d1ff',fg='black', font='helvetica 10').place(relx=0.07,rely=y)
+            Label(labelFrame, text="%-10s%-30s%-20s%-30s%-20s"%(i[0],i[1],i[2],i[3],i[4]),bg='#aef35a',fg='black', font='helvetica 10').place(relx=0.07,rely=y)
             y += 0.1
     except:
-        messagebox.showinfo("Search Error!","The value entered is wrong, Try again")
+        messagebox.showinfo("Search Error!","Try again, No book found !")
 
 
     quitBtn = Button(root,text="Back",bg='#f2f2f4', fg='black', font='helvetica 12 bold', command=searchBook)
@@ -72,10 +72,10 @@ def searchBook():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.3)
 
     headingFrame1 = Frame(root,bg="#000000",bd=5)
@@ -88,7 +88,7 @@ def searchBook():
     headingLabel.place(relx=0.25,rely=0.2, relwidth=0.5, relheight=0.5)
 
     # Book ID to Delete
-    lb1 = Label(labelFrame,text="Enter Subject : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb1 = Label(labelFrame,text="Enter Subject : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb1.place(relx=0.05,rely=0.5)
 
     en1 = Entry(labelFrame)

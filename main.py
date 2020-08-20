@@ -9,7 +9,7 @@ from ViewBooks import *
 from SearchBook import *
 from IssueBook import *
 
-mypass = "lenovo@330" #Database password
+mypass = "shubhu" #Database password
 mydatabase="library"  #Database name
 
 # Enter Table Names here
@@ -39,7 +39,7 @@ def empMenu():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
     headingFrame1 = Frame(root,bg="#000000",bd=5)
@@ -81,7 +81,7 @@ def stuMenu():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
     headingFrame1 = Frame(root,bg="#000000",bd=5)
@@ -252,46 +252,46 @@ def EmpRegister():
 
     global en1,en2,en3,en4,en5,en6
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.2,rely=0.44,relwidth=0.6,relheight=0.42)
 
     # Employee ID
-    lb1 = Label(labelFrame,text="User ID : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb1 = Label(labelFrame,text="User ID : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb1.place(relx=0.05,rely=0.05)
 
     en1 = Entry(labelFrame)
     en1.place(relx=0.3,rely=0.05, relwidth=0.62)
 
     #Employee Name
-    lb2 = Label(labelFrame,text="Name : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb2 = Label(labelFrame,text="Name : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb2.place(relx=0.05,rely=0.2)
 
     en2 = Entry(labelFrame)
     en2.place(relx=0.3,rely=0.2, relwidth=0.62)
 
     #Employee Paswword
-    lb3 = Label(labelFrame,text="Password : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb3 = Label(labelFrame,text="Password : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb3.place(relx=0.05,rely=0.35)
 
     en3 = Entry(labelFrame)
     en3.place(relx=0.3,rely=0.35, relwidth=0.62)
 
     #Employee Department
-    lb4 = Label(labelFrame,text="Department : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb4 = Label(labelFrame,text="Department : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb4.place(relx=0.05,rely=0.5)
 
     en4 = Entry(labelFrame)
     en4.place(relx=0.3,rely=0.5, relwidth=0.62)
 
     #Employee Date of Joining
-    lb5 = Label(labelFrame,text="DOJ : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb5 = Label(labelFrame,text="DOJ : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb5.place(relx=0.05,rely=0.65)
 
     en5 = Entry(labelFrame)
     en5.place(relx=0.3,rely=0.65, relwidth=0.62)
 
     # Employee Salary
-    lb5 = Label(labelFrame,text="Salary : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb5 = Label(labelFrame,text="Salary : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb5.place(relx=0.05,rely=0.8)
 
     en6 = Entry(labelFrame)
@@ -315,32 +315,32 @@ def Login():
 
     global en1,en2,en3,en4,SubmitBtn,btn1,btn2
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.2,rely=0.44,relwidth=0.6,relheight=0.3)
 
     # Login ID
-    lb1 = Label(labelFrame,text="User ID : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb1 = Label(labelFrame,text="User ID : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb1.place(relx=0.05,rely=0.1)
 
     en1 = Entry(labelFrame)
     en1.place(relx=0.3,rely=0.1, relwidth=0.62)
 
     # Name
-    lb2 = Label(labelFrame,text="Name : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb2 = Label(labelFrame,text="Name : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb2.place(relx=0.05,rely=0.3)
 
     en2 = Entry(labelFrame)
     en2.place(relx=0.3,rely=0.3, relwidth=0.62)
 
     # Password
-    lb3 = Label(labelFrame,text="Password : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb3 = Label(labelFrame,text="Password : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb3.place(relx=0.05,rely=0.5)
 
     en3 = Entry(labelFrame)
     en3.place(relx=0.3,rely=0.5, relwidth=0.62)
 
     # Role
-    lb4 = Label(labelFrame,text="Role: ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb4 = Label(labelFrame,text="Role: ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb4.place(relx=0.05,rely=0.7)
 
     en4 = Entry(labelFrame)
@@ -363,46 +363,46 @@ def studentRegister():
 
     global en1,en2,en3,en4,en5,en6
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.2,rely=0.44,relwidth=0.6,relheight=0.42)
 
     # Student Roll no
-    lb1 = Label(labelFrame,text="User ID : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb1 = Label(labelFrame,text="User ID : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb1.place(relx=0.05,rely=0.05)
 
     en1 = Entry(labelFrame)
     en1.place(relx=0.3,rely=0.05, relwidth=0.62)
 
     # Sudent Name
-    lb2 = Label(labelFrame,text="Name : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb2 = Label(labelFrame,text="Name : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb2.place(relx=0.05,rely=0.2)
 
     en2 = Entry(labelFrame)
     en2.place(relx=0.3,rely=0.2, relwidth=0.62)
 
     # Student Password
-    lb3 = Label(labelFrame,text="Password : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb3 = Label(labelFrame,text="Password : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb3.place(relx=0.05,rely=0.35)
 
     en3 = Entry(labelFrame)
     en3.place(relx=0.3,rely=0.35, relwidth=0.62)
 
     # Student Department
-    lb4 = Label(labelFrame,text="Dept : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb4 = Label(labelFrame,text="Dept : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb4.place(relx=0.05,rely=0.5)
 
     en4 = Entry(labelFrame)
     en4.place(relx=0.3,rely=0.5, relwidth=0.62)
 
      # Student Semester
-    lb5 = Label(labelFrame,text="Semester : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb5 = Label(labelFrame,text="Semester : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb5.place(relx=0.05,rely=0.65)
 
     en5 = Entry(labelFrame)
     en5.place(relx=0.3,rely=0.65, relwidth=0.62)
 
     # Student Batch
-    lb6 = Label(labelFrame,text="Batch : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb6 = Label(labelFrame,text="Batch : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb6.place(relx=0.05,rely=0.8)
 
     en6 = Entry(labelFrame)
@@ -425,7 +425,7 @@ def Employee():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
 
@@ -460,7 +460,7 @@ def Student():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
 
@@ -502,7 +502,7 @@ img = ImageTk.PhotoImage(background_image)
 Canvas1 = Canvas(root)
 
 Canvas1.create_image(350,400,image = img)
-Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
 Canvas1.pack(expand=True,fill=BOTH)
 
 headingFrame1 = Frame(root,bg="#000000",bd=5)

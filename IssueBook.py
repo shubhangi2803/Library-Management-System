@@ -3,7 +3,7 @@ from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
 
-mypass = "lenovo@330" #Database password
+mypass = "shubhu" #Database password
 mydatabase="library"  #Database name
 
 con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
@@ -86,12 +86,12 @@ def issue():
     except:
         messagebox.showinfo("Error!","Can't fetch Emp IDs")
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)
 
     y = 0.25
 
-    Label(labelFrame, text="%-20s%-30s%-30s"%('BID','Issued To','Issued By'),bg='#b3d1ff',fg='black', font='helvetica 10 bold').place(relx=0.27,rely=0.1)
+    Label(labelFrame, text="%-20s%-30s%-30s"%('BID','Issued To','Issued By'),bg='#aef35a',fg='black', font='helvetica 10 bold').place(relx=0.27,rely=0.1)
 
     issueSql = "insert into "+issueTable+" values ('"+bid+"','"+issueto+"','"+issueby+"')"
     show = "select * from "+issueTable
@@ -112,7 +112,7 @@ def issue():
         cur.execute(show)
         con.commit()
         for i in cur:
-            Label(labelFrame, text="%-20s%-30s%-30s"%(i[0],i[1],i[2]),bg='#b3d1ff',fg='black', font='helvetica 10').place(relx=0.3,rely=y)
+            Label(labelFrame, text="%-20s%-30s%-30s"%(i[0],i[1],i[2]),bg='#aef35a',fg='black', font='helvetica 10').place(relx=0.3,rely=y)
             y += 0.1
     except:
         messagebox.showinfo("Search Error!","The value entered is wrong, Try again")
@@ -150,10 +150,10 @@ def issueBook():
 
     Canvas1 = Canvas(root)
 
-    Canvas1.config(bg="#b3d1ff",width = newImageSizeWidth, height = newImageSizeHeight)
+    Canvas1.config(bg="#aef35a",width = newImageSizeWidth, height = newImageSizeHeight)
     Canvas1.pack(expand=True,fill=BOTH)
 
-    labelFrame = Frame(root,bg='#b3d1ff')
+    labelFrame = Frame(root,bg='#aef35a')
     labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.3)
 
     headingFrame1 = Frame(root,bg="#000000",bd=5)
@@ -166,21 +166,21 @@ def issueBook():
     headingLabel.place(relx=0.25,rely=0.2, relwidth=0.5, relheight=0.5)
 
     # Book ID
-    lb1 = Label(labelFrame,text="Book ID : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb1 = Label(labelFrame,text="Book ID : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb1.place(relx=0.05,rely=0.2)
 
     en1 = Entry(labelFrame)
     en1.place(relx=0.3,rely=0.2, relwidth=0.62)
 
     # Issued To Roll Number
-    lb2 = Label(labelFrame,text="Issued To(User ID) : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb2 = Label(labelFrame,text="Issued To(User ID) : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb2.place(relx=0.05,rely=0.4)
 
     en2 = Entry(labelFrame)
     en2.place(relx=0.3,rely=0.4, relwidth=0.62)
 
     # Issued By Employee Number
-    lb3 = Label(labelFrame,text="Issued By(User ID) : ", bg='#b3d1ff', fg='black', font='helvetica 10 bold')
+    lb3 = Label(labelFrame,text="Issued By(User ID) : ", bg='#aef35a', fg='black', font='helvetica 10 bold')
     lb3.place(relx=0.05,rely=0.6)
 
     en3 = Entry(labelFrame)
